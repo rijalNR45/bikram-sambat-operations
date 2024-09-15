@@ -1,23 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link href="css/style.css" rel="stylesheet"> -->
-        <script src="https://cdn.jsdelivr.net/npm/nepali-date-converter/dist/nepali-date-converter.umd.js">
-           
-        </script>
-
+        <title>Nepali Datepicker v4.0.4</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <!-- Nepali Datepicker -->
+        <link href="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/nepali.datepicker.v4.0.4.min.css" rel="stylesheet" type="text/css"/>
 
     </head>
     <body>
-        <div id="date">
-        bye bye
-        </div> 
-        <div class="convertedDate">
-            hi
-        </div>
-        <script src="script.js"></script>
+        <p>
+            <input type="text" id="nepali-datepicker" placeholder="Select Nepali Date"/>
+        </p>
+        <script src="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v4.0.4.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var date0 = {year: 2081, month: 5, day: 25};
+            console.log(date0);
+            var date1 = NepaliFunctions.GetCurrentBsDate();
+            console.log(date1);
+            var date2 = NepaliFunctions.BS2AD(date1);
+            console.log(date2);
+            console.log(NepaliFunctions.BsDatesDiff(date0, date1));
+
+           
+        </script>
+
+        </script>
     </body>
 </html>
