@@ -4,44 +4,22 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <!-- Nepali Datepicker -->
         <link href="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/nepali.datepicker.v4.0.4.min.css" rel="stylesheet" type="text/css"/>
-
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <p>
-            <input type="text" id="nepali-datepicker" placeholder="Select Nepali Date"/>
-        </p>
+       <h1 class="main_header">DATE OPERATIONS</h1>
         <h2>Enter the date</h2>
         <h4>Format: yyyy-mm-dd</h4>
         <input type="text" id="inputDate1" placeholder="Date">
         <input type="text" id="inputDate2" placeholder="Date">
-        <button onclick="storeInput()">Submit</button>
+        <button class="submitButton">Submit</button>
+        <h4 id="output">nirajan</h4>
     
         <script src="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v4.0.4.min.js" type="text/javascript"></script>
+        <script src="script.js"></script>
         <script type="text/javascript">
-            function storeInput(){
-
-                var input1 = document.querySelector("#inputDate1").value;
-               // var input1modified = NepaliFunctions.ConvertToDateObject(input1);
-                var input2 = document.querySelector("#inputDate2").value;
-                //var input2modified = NepaliFunctions.ConvertToDateObject(input2);
-
-               
-                var obtainedResult = NepaliFunctions.BsDatesDiff(input1, input2) 
-                console.log(obtainedResult);
-                
-                
-               
-            }
-        //    console.log(input);
-        //     var date0 = {year: 2060, month:1, day: 23};
-        //     console.log(date1);
-           
-        //     console.log(date2);
-
-           
-        </script>
+        
 
         </script>
     </body>
