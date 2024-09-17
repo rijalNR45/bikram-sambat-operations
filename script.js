@@ -62,23 +62,26 @@ outputHolder3.appendChild(output3);
 
 //for operation4
 
-var submitButton4Select = document.querySelector("#submit4");
-submitButton4Select.addEventListener('click', fourthOperation);
+// var submitButton4Select = document.querySelector("#submit4");
+// submitButton4Select.addEventListener('click', fourthOperation);
 
 
-function fourthOperation(){
+// function fourthOperation(){
 
-var input4A = document.querySelector("#inputDate4A").value;
-var input4B = document.querySelector("#inputDate4B").value;
+// var input4A = document.querySelector("#inputDate4A").value;
+// var input4B = document.querySelector("#inputDate4B").value;
 
-var obtainedResult = NepaliFunctions.BsAddDays(input4A, input4B, 'YYYY-MM-DD')
-console.log(obtainedResult); 
-const outputHolder4 = document.getElementById("container4th");
-let output4 = document.createElement("h3");
-output4.textContent = ("The final date is: " + obtainedResult + " B.S." );
-outputHolder4.appendChild(output4);
+// var formattedInput4A = NepaliFunctions.ConvertToDateObject(input4A, "YYYY-MM-DD");
 
-}
+
+// var obtainedResult = NepaliFunctions.BsAddDays(formattedInput4A, input4B, 'YYYY-MM-DD')
+// console.log(obtainedResult); 
+// const outputHolder4 = document.getElementById("container4th");
+// let output4 = document.createElement("h3");
+// output4.textContent = ("The final date is: " + obtainedResult + " B.S." );
+// outputHolder4.appendChild(output4);
+
+// }
 
 
 
