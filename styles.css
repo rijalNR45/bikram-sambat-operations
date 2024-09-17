@@ -34,10 +34,11 @@ body{
   }
   .submitButton{
     background-color: rgb(45, 56, 119);
-    width: 10vw;
+    width: 9vw;
     font-size: 2vw;
-    color: white;
+    color: white; 
     animation: smooth;
+    margin-bottom: 3vw;
   }
   .submitButton:hover{
     transform: scale(1.1);
