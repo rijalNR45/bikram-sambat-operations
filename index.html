@@ -8,13 +8,66 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div class="mainContainer">
        <h1 class="main_header">DATE OPERATIONS</h1>
-        <h2>Enter the date</h2>
-        <h4>Format: yyyy-mm-dd</h4>
-        <input type="text" id="inputDate1" placeholder="Date">
-        <input type="text" id="inputDate2" placeholder="Date">
-        <button class="submitButton">Submit</button>
-        <h4 id="output">nirajan</h4>
+       
+       <div class="sub-container">
+        <h2 class="operation-title">Convert BS to AD:</h2>
+        <h4 class="format">Format: yyyy-mm-dd</h4>
+        <input type="text" class ="input-field"id="inputDate1" placeholder="Date 1">
+        <button class="submitButton" id="submit1">Submit</button>
+        
+               
+       </div>
+        
+        <div class="sub-container">
+            <h2 class="operation-title">Convert AD to BS:</h2>
+        <h4 class="format">Format: yyyy-mm-dd</h4>
+        <input type="text" class ="input-field" id="inputDate1" placeholder="Date 1">
+        <button class="submitButton" id="submit2">Submit</button>
+
+        </div>
+
+     
+        <div class="sub-container">
+            <h2 class="operation-title">Difference between any two BS dates:</h2>
+        <h4 class="format">Format: yyyy-mm-dd</h4>
+        <input type="text" class ="input-field" id="inputDate1" placeholder="Date 1">
+        <input type="text" class ="input-field" id="outputDate" placeholder="output">
+
+        <button class="submitButton" id="submit3">Submit</button>
+
+        </div>
+
+       
+        <div class="sub-container">
+            <h2 class="operation-title">Add days to BS date:</h2>
+        <h4 class="format">Format: yyyy-mm-dd</h4>
+        <input type="text" class ="input-field" id="inputForOp1" placeholder="Date 1">
+        <button class="submitButton" id = "submit4">Submit</button>
+        <input type="text" class ="input-field" id="outputForOp1" placeholder="output">
+
+        </div>
+
+       
+        <div class="sub-container">
+            <h2 class="operation-title">Difference between any two AD dates:</h2>
+        <h4 class="format">Format: yyyy-mm-dd</h4>
+        <input type="text" class ="input-field" id="inputDate1" placeholder="Date 1">
+        <input type="text" class ="input-field" id="outputDate" placeholder="output">
+        <button class="submitButton" id="submit5">Submit</button>
+
+        </div>
+
+       
+        <div class="sub-container">
+            <h2 class="operation-title">Add days to BS date:</h2>
+        <h4 class="format">Format: yyyy-mm-dd</h4>
+        <input type="text" class ="input-field" id="inputDate1" placeholder="Date 1">
+        <input type="text" class ="input-field" id="outputDate" placeholder="output">
+        <button class="submitButton" id="submit6">Submit</button>
+
+        </div>
     
         <script src="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v4.0.4.min.js" type="text/javascript"></script>
         <script src="script.js"></script>
@@ -22,5 +75,6 @@
         
 
         </script>
+        </div>
     </body>
 </html>

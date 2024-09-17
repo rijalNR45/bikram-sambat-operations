@@ -1,8 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
+body{
+  background-color: #697565;
+}
 .main_header {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
+    font-size: 4vw;
     font-style: normal;
+    text-align: center;
+    color: bisque;
+    background-color: #181c14;
+}
+  
+  .mainContainer{
+  width: 70%;
+  max-width: 1800px;
+  margin: 0% auto; 
+  background-color: #758694;
+  
+  
+  /* text-align: center;  */
+  } 
+  @media(max-width: 600px){
+    .mainContainer{
+      width: 100%;
+      margin: 0;
+      
+    }
+    body{
+      margin: 0;
+    }
+  }
+  .submitButton{
+    background-color: rgb(45, 56, 119);
+    width: 10vw;
+    font-size: 2vw;
+    color: white;
+    animation: smooth;
+  }
+  .submitButton:hover{
+    transform: scale(1.1);
+    background-color: rgb(30, 32, 58);
+  }
+  .sub-container{
+    
+    background-color: #3c3D37;
+    font-size: 2.5vw;
+  color: #efdfcc;
+  text-align: center;
+  
+  }
+  .operation-title, .input-field, .format{
+    margin-left: 3%;
+  }
+  .input-field{
+    width: 30vw;
+    height: auto;
+    max-width: 500px;
+    margin-bottom: 6%;
+  }
+  .operation-title{
+    padding-top: 3%;
   }
   
