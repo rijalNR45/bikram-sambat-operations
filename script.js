@@ -1,19 +1,32 @@
 //for operation 1
 
-    var submitButton1Select = document.querySelector("#submit1");
+    const submitButton1Select = document.querySelector("#submit1");
+    const outputHolder1 = document.getElementById("container1st");
+
+    function updateOutput(input1){
+        if(outputHolder1.firstChild){
+            outputHolder1.removeChild(outputHolder1.firstChild)
+        }
+        
+    var obtainedResult = NepaliFunctions.BS2AD(input1);
+    console.log(obtainedResult); 
+    const output1 = document.createElement('h3');
+    output1.textContent = ("The date in AD is:"+ " "+ obtainedResult);
+    outputHolder1.appendChild(output1);   
+    }
     submitButton1Select.addEventListener('click', firstOperation);
 
     
 function firstOperation(){
     
     var input1 = document.querySelector("#inputDate1").value;
-    var obtainedResult = NepaliFunctions.BS2AD(input1);
-    console.log(obtainedResult); 
-    const outputHolder1 = document.getElementById("container1st");
-    let output1 = document.createElement("h3");
-    output1.textContent = ("The date in AD is:"+ " "+ obtainedResult);
-    outputHolder1.appendChild(output1);
-  
+    if(input1.trim() !==""){
+    updateOutput(input1);
+    }
+    else{
+        updateOutput("Please enter a valid input.");
+    }
+    document.querySelector("#inputDate1").value = "";
 }
 
 //for operation2
@@ -31,7 +44,7 @@ const outputHolder2 = document.getElementById("container2nd");
 let output2 = document.createElement("h3");
 output2.textContent = ("The date in BS is:"+ obtainedResult);
 outputHolder2.appendChild(output2);
-
+document.querySelector("#inputDate2").value = "";
 }
 
 
@@ -53,6 +66,8 @@ const outputHolder3 = document.getElementById("container3rd");
 let output3 = document.createElement("h3");
 output3.textContent = ("The difference is: " + obtainedResult + " days.");
 outputHolder3.appendChild(output3);
+document.querySelector("#inputDate3A").value = "";
+document.querySelector("#inputDate3B").value = "";
 
 }
 
@@ -60,7 +75,7 @@ outputHolder3.appendChild(output3);
 
 
 
-//for operation4
+// //for operation4
 
 // var submitButton4Select = document.querySelector("#submit4");
 // submitButton4Select.addEventListener('click', fourthOperation);
@@ -102,6 +117,8 @@ const outputHolder5 = document.getElementById("container5th");
 let output5 = document.createElement("h3");
 output5.textContent = ("The difference is: " + obtainedResult + " days" );
 outputHolder5.appendChild(output5);
+document.querySelector("#inputDate5A").value = "";
+document.querySelector("#inputDate5B").value = "";
 
 }
 
