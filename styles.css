@@ -11,6 +11,8 @@ body{
     text-align: center;
     color: bisque;
     background-color: #181c14;
+    margin-bottom: 0px;
+    padding-bottom: 1vw;
 }
   
   .mainContainer{
@@ -22,6 +24,20 @@ body{
   
   /* text-align: center;  */
   } 
+  .limit{
+    text-align: center;
+    color: rgb(245, 217, 217);
+    font-size: 2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1vw;
+    
+  }
+  .limit-box{
+    background-color: #181c14;
+    margin: 0;
+    padding: 2vw;
+  }
   @media(max-width: 600px){
     .mainContainer{
       width: 100%;
@@ -52,6 +68,9 @@ body{
   text-align: center;
   
   }
+  #container1st{
+    margin-top: 0;
+  }
   .operation-title, .input-field, .format{
     margin-left: 3%;
   }
@@ -64,4 +83,6 @@ body{
   .operation-title{
     padding-top: 3%;
   }
-  
+  .title1{
+    margin-top: 0;
+  }
