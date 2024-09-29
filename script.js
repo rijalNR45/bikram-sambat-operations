@@ -1,5 +1,6 @@
 //for operation 1
-
+//the credit for NepaliFunctions goes to the original creator https://github.com/sajanm/nepali-date-picker.
+// this was just made to make intereactive with GUI users. 
     const submitButton1Select = document.querySelector("#submit1");
     const outputHolder1 = document.getElementById("container1st");
 
